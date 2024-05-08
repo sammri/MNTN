@@ -14,8 +14,26 @@ body{
     background-color: var(--colorBackground);
 }
 
-
+.container{
+    max-width: 1507px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
 /* =========================HEADER========================= */
+.header {
+    padding-top: 64px;
+    margin: 0 80px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 93.22;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .logo{
     font-family: "Chonburi", serif;
     font-weight: 400;
@@ -23,15 +41,29 @@ body{
     letter-spacing: 0.01em;
     text-transform: uppercase;
 }
-.action-link{
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-action{
     font-size: 19px;
     font-weight: 900;
 }
 
 /* =================main================= */
+.hero-container{
+    max-width: 980px;
+}
+.hero{
+    padding-top: 200px;
+    padding-bottom: 745px;
+}
 .hero-subtitle{
     letter-spacing: 0.33em;
     text-transform: uppercase;
+    margin-bottom: 32px;
+
 }
 
 .hero-title{
@@ -40,6 +72,30 @@ body{
     font-size: 88px;
     line-height: 1.13636;
     text-transform: capitalize;
+    margin-bottom: 32px;
+
+}
+.travel{
+    padding-bottom: 300px;
+}
+.travel-item{
+    margin-bottom: 200px;
+}
+.travel-item:last-child{
+    margin-bottom: 0px;
+}
+.travel-step{
+    display: flex;
+    gap: 15px;
+}
+.travel-item:nth-child(even) .step-photo{
+    order: -1;
+}
+.step-body{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding-left: 150px;
 }
 .step-text{
     font-weight: 900;
@@ -60,6 +116,12 @@ body{
     color: var(--colorTextAccent);
     font-weight: 900;
     
+}
+.footer-container{
+    
+}
+.footer{
+    padding-bottom: 120px;
 }
 .footer-info-text{
     font-weight: 900;
